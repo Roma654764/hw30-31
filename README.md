@@ -48,8 +48,8 @@ while running:
         star_y = random.randint(0, HEIGHT - star_size)
 
     screen.fill(WHITE)
-    pygame.draw.rect(screen, BLUE, (player_x, player_y, player_size, player_size))  # Игрок
-    pygame.draw.circle(screen, YELLOW, (star_x + star_size // 2, star_y + star_size // 2), star_size // 2)  # Звезда
+    pygame.draw.rect(screen, BLUE, (player_x, player_y, player_size, player_size))
+    pygame.draw.circle(screen, YELLOW, (star_x + star_size // 2, star_y + star_size // 2), star_size // 2)
 
     font = pygame.font.Font(None, 36)
     text = font.render(f'Score: {score}', True, BLUE)
